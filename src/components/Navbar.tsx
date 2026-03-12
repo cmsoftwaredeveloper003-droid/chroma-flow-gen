@@ -20,7 +20,7 @@ const Navbar = () => {
       </div>
 
       <div className="ml-auto">
-        <button className="px-6 py-2.5 text-sm font-medium tracking-wider uppercase bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300"><button className="px-6 py-2.5 text-sm font-medium tracking-wider uppercase bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300">Book Now</button></button>
+        <button className="px-6 py-2.5 text-sm font-medium tracking-wider uppercase bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300">Book Now</button>
       </div>
     </nav>
   );
