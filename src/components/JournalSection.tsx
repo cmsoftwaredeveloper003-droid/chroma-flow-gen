@@ -1,13 +1,11 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import journal1 from "@/assets/journal-1.jpg";
-import journalGroupMural from "@/assets/journal-group-mural.jpg";
 import journalBonfire from "@/assets/journal-bonfire.jpg";
 import journal4 from "@/assets/journal-4.jpg";
 
 const images = [
   { src: journal1, alt: "Grand staircase", className: "col-span-1 row-span-1" },
-  { src: journalGroupMural, alt: "Group at the resort", className: "col-span-1 row-span-1" },
   { src: journalBonfire, alt: "Bonfire night", className: "col-span-1 row-span-2" },
   { src: journal4, alt: "Outdoor terrace", className: "col-span-2 row-span-1" },
 ];
