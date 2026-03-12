@@ -2,7 +2,7 @@ import { Calendar, Users } from "lucide-react";
 
 const BookingWidget = () => {
   return (
-    <div className="booking-widget flex items-center rounded-sm shadow-2xl">
+    <div className="booking-widget flex items-center rounded-sm shadow-2xl w-full max-w-2xl">
       <div className="flex items-center gap-3 px-6 py-4 min-w-[240px]">
         <Calendar className="h-5 w-5 text-muted-foreground" />
         <div>
