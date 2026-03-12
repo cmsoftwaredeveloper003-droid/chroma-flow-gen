@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import journal1 from "@/assets/journal-1.jpg";
 import journalBonfire from "@/assets/journal-bonfire.jpg";
 import journal4 from "@/assets/journal-4.jpg";
 
