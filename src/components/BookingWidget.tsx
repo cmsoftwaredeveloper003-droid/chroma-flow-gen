@@ -25,7 +25,7 @@ const BookingWidget = () => {
         </div>
       </div>
 
-      <button className="btn-book px-10 py-5 ml-4 text-sm tracking-widest uppercase font-semibold">
+      <button className="btn-book px-10 py-5 ml-auto text-sm tracking-widest uppercase font-semibold">
         Book Now
       </button>
     </div>
