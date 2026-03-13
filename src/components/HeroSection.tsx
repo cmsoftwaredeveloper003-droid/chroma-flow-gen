@@ -23,8 +23,8 @@ const HeroSection = () => {
       <Navbar />
 
       {/* Hero Content */}
-      <div className="relative z-20 flex flex-col justify-end h-full pb-16 md:pb-24 px-8 md:px-16">
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8">
+      <div className="relative z-20 flex flex-col justify-end h-full pb-8 sm:pb-16 md:pb-24 px-4 sm:px-8 md:px-16">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 md:gap-8">
           <div>
             <p
               className="text-xs font-semibold tracking-[0.3em] uppercase mb-4 opacity-0 animate-fade-up"
@@ -33,7 +33,7 @@ const HeroSection = () => {
               Only 6 Villas. No Exceptions.
             </p>
             <h1
-              className="font-display text-5xl md:text-7xl lg:text-8xl font-normal leading-[1.1] opacity-0 animate-fade-up"
+              className="font-display text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-normal leading-[1.1] opacity-0 animate-fade-up"
               style={{ color: "hsl(var(--hero-text))" }}
             >
               Bhurban's Most
@@ -51,7 +51,7 @@ const HeroSection = () => {
             <a
               href="#reserve"
               className="inline-flex items-center gap-2 mt-8 text-sm font-medium tracking-wider uppercase opacity-0 animate-fade-up-delay-2 transition-colors duration-300 hover:opacity-80"
-              style={{ color: "hsl(var(--primary))" }}
+              style={{ color: "hsl(var(--hero-text))" }}
             >
               Check Availability →
             </a>
