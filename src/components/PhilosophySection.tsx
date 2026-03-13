@@ -5,8 +5,9 @@ import galleryExterior from "@/assets/gallery-exterior.jpg";
 import galleryBalcony from "@/assets/gallery-balcony.jpg";
 import gallerySunlight from "@/assets/gallery-sunlight.jpg";
 import galleryInterior from "@/assets/gallery-interior.jpg";
+import philosophyInterior from "@/assets/philosophy-interior.jpg";
 
-const philosophyImages = [villaExterior, galleryExterior, galleryBalcony, gallerySunlight, galleryInterior];
+const philosophyImages = [villaExterior, galleryExterior, galleryBalcony, gallerySunlight, galleryInterior, philosophyInterior];
 
 const PhilosophySection = () => {
   const ref = useRef(null);
