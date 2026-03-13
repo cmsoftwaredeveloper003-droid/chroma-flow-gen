@@ -30,15 +30,17 @@ const HeroSection = () => {
               className="text-xs font-semibold tracking-[0.3em] uppercase mb-4 opacity-0 animate-fade-up"
               style={{ color: "hsl(var(--hero-text) / 0.6)" }}
             >
-              Bhurban's most sought-after mountain escape
+              Only 6 Villas. No Exceptions.
             </p>
             <h1
               className="font-display text-5xl md:text-7xl lg:text-8xl font-normal leading-[1.1] opacity-0 animate-fade-up"
               style={{ color: "hsl(var(--hero-text))" }}
             >
-              Only 6 Villas.
+              Bhurban's Most
               <br />
-              No Exceptions.
+              Sought-After
+              <br />
+              Mountain Escape
             </h1>
             <p
               className="mt-6 text-base md:text-lg font-light max-w-md opacity-0 animate-fade-up-delay"
