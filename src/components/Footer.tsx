@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import logo from "@/assets/himalaya-logo.png";
+
 
 const Footer = () => {
   return (
@@ -11,7 +11,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8">
           {/* Logo & Tagline */}
           <div className="md:col-span-1">
-            <img src={logo} alt="Himalaya Villas" className="h-14 w-auto mb-4 brightness-200" />
+            <h3
+              className="font-display text-lg tracking-[0.15em] uppercase mb-4"
+              style={{ color: "hsl(36 45% 55%)" }}
+            >
+              Himalaya Villas
+            </h3>
             <p
               className="text-sm leading-relaxed font-body"
               style={{ color: "hsl(0 0% 100% / 0.5)" }}
