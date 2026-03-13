@@ -1,10 +1,24 @@
-import { useRef } from "react";
-import { motion, useInView } from "framer-motion";
-import villaImage from "@/assets/villa-exterior.jpg";
+import { useRef, useState, useEffect } from "react";
+import { motion, useInView, AnimatePresence } from "framer-motion";
+import villaExterior from "@/assets/villa-exterior.jpg";
+import galleryExterior from "@/assets/gallery-exterior.jpg";
+import galleryBalcony from "@/assets/gallery-balcony.jpg";
+import gallerySunlight from "@/assets/gallery-sunlight.jpg";
+import galleryInterior from "@/assets/gallery-interior.jpg";
+
+const philosophyImages = [villaExterior, galleryExterior, galleryBalcony, gallerySunlight, galleryInterior];
 
 const PhilosophySection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const [imgIndex, setImgIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setImgIndex((prev) => (prev + 1) % philosophyImages.length);
+    }, 3000);
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <section ref={ref} className="bg-background py-24 md:py-36 px-8 md:px-16 lg:px-24 overflow-hidden">
@@ -66,21 +80,26 @@ const PhilosophySection = () => {
           </motion.p>
         </div>
 
-        {/* Right: Image */}
+        {/* Right: Rotating Images */}
         <motion.div
           initial={{ opacity: 0, x: 80, scale: 0.95 }}
           animate={isInView ? { opacity: 1, x: 0, scale: 1 } : {}}
           transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
           className="relative"
         >
-          <div className="overflow-hidden rounded-sm shadow-2xl">
-            <motion.img
-              src={villaImage}
-              alt="Himalaya Villas luxury exterior with spiral staircase and pine trees"
-              className="w-full h-[500px] md:h-[600px] lg:h-[650px] object-cover"
-              whileHover={{ scale: 1.03 }}
-              transition={{ duration: 0.6 }}
-            />
+          <div className="overflow-hidden rounded-sm shadow-2xl relative h-[500px] md:h-[600px] lg:h-[650px]">
+            <AnimatePresence mode="popLayout">
+              <motion.img
+                key={imgIndex}
+                src={philosophyImages[imgIndex]}
+                alt="Himalaya Villas luxury experience"
+                className="absolute inset-0 w-full h-full object-cover"
+                initial={{ opacity: 0, scale: 1.08 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.97 }}
+                transition={{ duration: 1.2, ease: "easeInOut" }}
+              />
+            </AnimatePresence>
           </div>
           {/* Decorative accent */}
           <motion.div
