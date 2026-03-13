@@ -33,7 +33,7 @@ const HeroSection = () => {
               Only 6 Villas. No Exceptions.
             </p>
             <h1
-              className="font-display text-5xl md:text-7xl lg:text-8xl font-normal leading-[1.1] opacity-0 animate-fade-up"
+              className="font-display text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-normal leading-[1.1] opacity-0 animate-fade-up"
               style={{ color: "hsl(var(--hero-text))" }}
             >
               Bhurban's Most
