@@ -51,7 +51,7 @@ const HeroSection = () => {
             <a
               href="#reserve"
               className="inline-flex items-center gap-2 mt-8 text-sm font-medium tracking-wider uppercase opacity-0 animate-fade-up-delay-2 transition-colors duration-300 hover:opacity-80"
-              style={{ color: "hsl(var(--primary))" }}
+              style={{ color: "hsl(var(--hero-text))" }}
             >
               Check Availability →
             </a>
