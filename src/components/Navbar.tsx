@@ -15,8 +15,11 @@ const Navbar = () => {
         ))}
       </ul>
 
-      <div className="absolute left-1/2 -translate-x-1/2 top-4">
-        <img src={logo} alt="Himalaya Villas" className="h-20 w-20 object-contain" />
+      <div className="absolute left-1/2 -translate-x-1/2 top-3">
+        <div className="relative flex flex-col items-center">
+          <img src={logo} alt="Himalaya Villas" className="h-16 w-16 md:h-20 md:w-20 object-contain drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]" />
+          <span className="text-[10px] md:text-xs font-display tracking-[0.25em] uppercase mt-1 drop-shadow-[0_1px_4px_rgba(0,0,0,0.5)]" style={{ color: "hsl(var(--hero-text) / 0.9)" }}>Himalaya Villas</span>
+        </div>
       </div>
 
       <div className="ml-auto">

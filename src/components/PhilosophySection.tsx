@@ -17,7 +17,7 @@ const PhilosophySection = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setImgIndex((prev) => (prev + 1) % philosophyImages.length);
-    }, 3000);
+    }, 1500);
     return () => clearInterval(timer);
   }, []);
 
