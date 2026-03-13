@@ -1,6 +1,6 @@
 import logo from "@/assets/himalaya-logo.png";
 
-const navItems = ["Villas", "Experience", "Dining", "Journal", "Contact"];
+const navItems = ["Villas", "Experience", "Virtual Tour", "Journal", "Contact"];
 
 const Navbar = () => {
   return (
