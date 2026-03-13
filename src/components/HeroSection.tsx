@@ -23,8 +23,8 @@ const HeroSection = () => {
       <Navbar />
 
       {/* Hero Content */}
-      <div className="relative z-20 flex flex-col justify-end h-full pb-16 md:pb-24 px-8 md:px-16">
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8">
+      <div className="relative z-20 flex flex-col justify-end h-full pb-8 sm:pb-16 md:pb-24 px-4 sm:px-8 md:px-16">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 md:gap-8">
           <div>
             <p
               className="text-xs font-semibold tracking-[0.3em] uppercase mb-4 opacity-0 animate-fade-up"
