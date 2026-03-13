@@ -26,9 +26,9 @@ const PhilosophySection = () => {
             transition={{ duration: 0.8, delay: 0.15 }}
             className="font-display text-4xl md:text-5xl lg:text-6xl font-normal leading-[1.15] text-foreground"
           >
-            A Sanctuary Crafted
+            We Built This For People
             <br />
-            for <span className="italic text-primary">Elegance & Escape</span>
+            Who Have <span className="italic text-primary">Stayed Everywhere Else</span>
           </motion.h2>
 
           <motion.div
@@ -44,11 +44,25 @@ const PhilosophySection = () => {
             transition={{ duration: 0.8, delay: 0.5 }}
             className="text-base md:text-lg leading-relaxed text-muted-foreground max-w-lg"
           >
-            Nestled in the pristine heights of Bhurban, Himalaya Villas offers an
-            escape into nature without compromising on modern luxury. Whether
-            you are here for a romantic getaway, a corporate retreat, or a grand
-            celebration, our bespoke services ensure your stay is nothing short of
-            extraordinary.
+            Himalaya Villas exists for guests who no longer need to be impressed — they need to be restored.
+          </motion.p>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="text-base md:text-lg leading-relaxed text-muted-foreground max-w-lg"
+          >
+            Set among the cedar forests of Bhurban, every villa was designed with a single intention: to give you back something the city took. Stillness. Space. The rare feeling that time belongs to you again.
+          </motion.p>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.8, delay: 0.7 }}
+            className="text-base md:text-lg leading-relaxed text-muted-foreground max-w-lg italic"
+          >
+            We don't offer packages. We learn what you need and build your stay around it.
           </motion.p>
         </div>
 

@@ -67,10 +67,19 @@ const ServicesSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="font-display text-2xl md:text-3xl italic mb-16"
+          className="font-display text-2xl md:text-3xl italic mb-6"
           style={{ color: "hsl(0 0% 95% / 0.4)" }}
         >
-          A Journey of Senses.
+          The Mountain as Your Venue
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="text-base md:text-lg leading-relaxed mb-16 max-w-xl"
+          style={{ color: "hsl(0 0% 65%)" }}
+        >
+          There is no grander setting in Pakistan for the moments that matter most. We simply make sure everything else is perfect.
         </motion.p>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
