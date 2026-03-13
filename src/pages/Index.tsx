@@ -7,6 +7,7 @@ import MomentsSection from "@/components/MomentsSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import GlimpseSection from "@/components/GlimpseSection";
 import JournalSection from "@/components/JournalSection";
+import WhyChooseSection from "@/components/WhyChooseSection";
 import ReserveSection from "@/components/ReserveSection";
 import Footer from "@/components/Footer";
 
